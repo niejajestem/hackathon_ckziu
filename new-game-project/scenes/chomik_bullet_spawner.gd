@@ -10,7 +10,6 @@ var damage = 5
 var reloadTime = 0.5
 var range = 100
 
-
 func _ready():
 	$BulletTimer.start()
 	sprite = get_node("../Sprite2D")
@@ -18,7 +17,7 @@ func _ready():
 func _process(delta: float) -> void:
 	var size = range / 100
 	$"../Area2D/CollisionShape2D".scale = Vector2(size, size)
-	
+	$BulletTimer.start(reloadTime)
 	
 func _on_bullet_timer_timeout():
 	if !$"..".dziks.is_empty():

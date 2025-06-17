@@ -28,6 +28,7 @@ func _on_range_pressed() -> void:
 		$"../GridContainer/RangePrice".text = "%d" % priceTable[rangePurchased]
 
 func _on_speed_pressed() -> void:
+	
 	var coal = int($"../../../gameUI".coal)
 	if coal >= priceTable[speedPurchased]:
 		$"../../../gameUI/coalCounter".text = "%d" % $"../../../gameUI".coal
