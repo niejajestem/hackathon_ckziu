@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://y1x6nm00707p"]
+[gd_scene load_steps=10 format=3 uid="uid://kg2stjr66a2v"]
 
 [ext_resource type="Texture2D" uid="uid://cifch1tv33gau" path="res://sprites/map.png" id="1_c7s6e"]
-[ext_resource type="Script" path="res://scenes/map.gd" id="1_nakos"]
+[ext_resource type="Script" uid="uid://cxgewyq0q44jb" path="res://scenes/map.gd" id="1_nakos"]
 [ext_resource type="PackedScene" uid="uid://xloejy4xkwdr" path="res://scenes/towerPlace.tscn" id="2_wijl4"]
 [ext_resource type="Texture2D" uid="uid://uae5gtorasql" path="res://sprites/drzewo.png" id="3_e0an3"]
 [ext_resource type="Texture2D" uid="uid://k0w4x7f6eps6" path="res://sprites/luzny.jpg" id="4_p5pve"]
