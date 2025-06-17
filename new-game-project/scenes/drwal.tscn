@@ -1,22 +1,23 @@
 [gd_scene load_steps=5 format=3 uid="uid://negigewd7e8n"]
 
 [ext_resource type="Script" uid="uid://cv3ewfto8woe" path="res://scenes/detectEnemies.gd" id="1_aor04"]
-[ext_resource type="Script" uid="uid://cbqtoex0j4rc5" path="res://scenes/bullet_spawner.gd" id="2_3uhrn"]
+[ext_resource type="Script" uid="uid://ckdt573aatt4q" path="res://scenes/drwal_bullet_spawner.gd" id="2_4m5f3"]
 [ext_resource type="Texture2D" uid="uid://b4ft76y4u2lch" path="res://sprites/drwal.png" id="3_qu14i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mr8ar"]
 radius = 150.0
 
-[node name="Node2D" type="Node2D"]
+[node name="Drwal" type="Node2D"]
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_aor04")
 
-[node name="BulletSpawner" type="Node2D" parent="."]
+[node name="DrwalBulletSpawner" type="Node2D" parent="."]
 z_index = 1
-position = Vector2(27, 44)
-script = ExtResource("2_3uhrn")
+position = Vector2(27, 30.25)
+script = ExtResource("2_4m5f3")
+metadata/damageasd = 30
 
-[node name="ColorRect" type="ColorRect" parent="BulletSpawner"]
+[node name="ColorRect" type="ColorRect" parent="DrwalBulletSpawner"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -31,9 +32,8 @@ grow_vertical = 2
 color = Color(1, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="BulletTimer" type="Timer" parent="BulletSpawner"]
+[node name="BulletTimer" type="Timer" parent="DrwalBulletSpawner"]
 wait_time = 2.0
-metadata/damage = 30
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("3_qu14i")
@@ -46,6 +46,6 @@ monitorable = false
 position = Vector2(32, 32)
 shape = SubResource("CircleShape2D_mr8ar")
 
-[connection signal="timeout" from="BulletSpawner/BulletTimer" to="BulletSpawner" method="_on_bullet_timer_timeout"]
+[connection signal="timeout" from="DrwalBulletSpawner/BulletTimer" to="DrwalBulletSpawner" method="_on_bullet_timer_timeout"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

@@ -1,12 +1,15 @@
 extends Node2D
 
 @export var spawn_bullet = preload("res://scenes/bullet.tscn")
+
 var damage = 5
+var reloadTime = 0.5
 
 func _ready():
 	$BulletTimer.start()
 	
 func _on_bullet_timer_timeout():
+	print(damage)
 	if !$"..".dziks.is_empty():
 		var nearestDzik = getNearestDzik()
 		shoot(nearestDzik)
