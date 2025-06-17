@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://xloejy4xkwdr"]
+[gd_scene load_steps=8 format=3 uid="uid://xloejy4xkwdr"]
 
 [ext_resource type="Script" uid="uid://dmahi6geey3ms" path="res://scenes/tower_place.gd" id="1_0wer5"]
 [ext_resource type="Texture2D" uid="uid://uwi2cq00dvf4" path="res://sprites/plus.png" id="1_vcp7k"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://bqjvy45q4m0eh" path="res://scenes/chomik.gd" id="4_b38eh"]
 [ext_resource type="Texture2D" uid="uid://b4ft76y4u2lch" path="res://sprites/drwal.png" id="4_mtb8i"]
 [ext_resource type="Script" uid="uid://c5aho3us2h88x" path="res://scenes.gd" id="6_7v4r1"]
+[ext_resource type="Script" uid="uid://ulum26qfvo30" path="res://scenes/button.gd" id="7_r4dd6"]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2(0.7, 0.7)
@@ -71,6 +72,7 @@ offset_left = -25.0
 offset_bottom = 25.0
 grow_horizontal = 0
 text = "X"
+script = ExtResource("7_r4dd6")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="toggled" from="Button" to="." method="_on_button_toggled"]
@@ -80,3 +82,4 @@ text = "X"
 [connection signal="mouse_entered" from="ColorRect/GridContainer/Drwal" to="ColorRect/GridContainer/Drwal" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="ColorRect/GridContainer/Drwal" to="ColorRect/GridContainer/Drwal" method="_on_mouse_exited"]
 [connection signal="pressed" from="ColorRect/GridContainer/Drwal" to="." method="_on_dzik_pressed"]
+[connection signal="pressed" from="ColorRect/Button" to="ColorRect/Button" method="_on_pressed"]
