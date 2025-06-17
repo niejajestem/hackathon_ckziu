@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://uae5gtorasql" path="res://sprites/drzewo.png" id="3_e0an3"]
 [ext_resource type="Texture2D" uid="uid://k0w4x7f6eps6" path="res://sprites/luzny.jpg" id="4_p5pve"]
 [ext_resource type="Texture2D" uid="uid://lvju5ijq2vka" path="res://sprites/krzak.png" id="4_urblq"]
-[ext_resource type="Script" path="res://scenes/collision_shape_2d.gd" id="8_be0no"]
+[ext_resource type="Script" uid="uid://rkr8tr6g5nen" path="res://scenes/collision_shape_2d.gd" id="8_be0no"]
 [ext_resource type="PackedScene" uid="uid://dfh1ymikntg7b" path="res://scenes/gameUI.tscn" id="8_jh32y"]
 
 [sub_resource type="Curve2D" id="Curve2D_2klcf"]
