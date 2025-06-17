@@ -67,9 +67,3 @@ func _on_path_2d_child_exiting_tree(node: Node) -> void:
 		if(spawnedAllDziks):
 			print("Killed all dziks")
 			finishWave()
-			
-func _process(delta):
-	$"../Path2D".progress += speed * delta
-	if $"../Path2D".progress_ratio >= 1.0:
-		print("Completed path!")
-		queue_free()  # Remove the object, if needed
