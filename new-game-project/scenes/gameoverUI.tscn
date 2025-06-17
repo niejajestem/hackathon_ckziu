@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dke3aqem8vyij"]
+[gd_scene load_steps=3 format=3 uid="uid://dke3aqem8vyij"]
 
+[ext_resource type="Script" uid="uid://xkth588q0pjd" path="res://scenes/gameoverUI.gd" id="1_2i2vo"]
 [ext_resource type="FontFile" uid="uid://ldt3a5xgpo3s" path="res://fonts/Ldfcomicsans-jj7l.ttf" id="1_43730"]
 
 [node name="GameoverUi" type="Control"]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2i2vo")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
@@ -27,3 +29,5 @@ offset_top = 368.0
 offset_right = 629.0
 offset_bottom = 408.0
 text = "Menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
