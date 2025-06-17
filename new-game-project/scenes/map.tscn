@@ -12,51 +12,368 @@
 texture = ExtResource("1_c7s6e")
 centered = false
 
-[node name="Node2D" parent="." instance=ExtResource("2_wijl4")]
-position = Vector2(138, 195)
+[node name="towerPlace" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(144, 100)
 
-[node name="Drzewo" type="Sprite2D" parent="."]
+[node name="towerPlace3" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(145, 237)
+
+[node name="towerPlace4" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(145, 316)
+
+[node name="towerPlace6" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(144, 495)
+
+[node name="towerPlace7" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(293, 432)
+
+[node name="towerPlace8" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(651, 214)
+
+[node name="towerPlace9" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(284, 125)
+
+[node name="towerPlace10" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(379, 214)
+
+[node name="towerPlace11" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(527, 339)
+
+[node name="towerPlace12" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(781, 450)
+
+[node name="towerPlace13" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(876, 197)
+
+[node name="towerPlace16" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(777, 99)
+
+[node name="towerPlace15" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(513, 98)
+
+[node name="towerPlace14" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(1004, 43)
+
+[node name="env" type="Node" parent="."]
+
+[node name="Drzewo" type="Sprite2D" parent="env"]
 position = Vector2(1063, 242)
 texture = ExtResource("3_e0an3")
 
-[node name="Drzewo2" type="Sprite2D" parent="."]
+[node name="Drzewo2" type="Sprite2D" parent="env"]
 position = Vector2(1099.75, 274.5)
 scale = Vector2(1.16406, 1.29688)
 texture = ExtResource("3_e0an3")
 
-[node name="Drzewo3" type="Sprite2D" parent="."]
+[node name="Drzewo3" type="Sprite2D" parent="env"]
 position = Vector2(205, 573)
 scale = Vector2(1.39064, 1.23438)
 texture = ExtResource("3_e0an3")
 
-[node name="Drzewo3" type="Sprite2D" parent="Drzewo3"]
+[node name="Drzewo3" type="Sprite2D" parent="env/Drzewo3"]
 position = Vector2(-147.414, -166.885)
 scale = Vector2(0.813947, 0.807062)
 texture = ExtResource("3_e0an3")
 
-[node name="Krzak" type="Sprite2D" parent="Drzewo3"]
+[node name="Drzewo3" type="Sprite2D" parent="env/Drzewo3/Drzewo3"]
+position = Vector2(261.505, -366.384)
+scale = Vector2(1.57066, 1.55737)
+texture = ExtResource("3_e0an3")
+
+[node name="Drzewo3" type="Sprite2D" parent="env/Drzewo3/Drzewo3/Drzewo3"]
+position = Vector2(28.6865, -4.5118)
+scale = Vector2(0.919174, 0.911398)
+texture = ExtResource("3_e0an3")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3"]
 position = Vector2(-158.92, -106.126)
 texture = ExtResource("4_urblq")
 
-[node name="Krzak" type="Sprite2D" parent="Drzewo3/Krzak"]
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak"]
 position = Vector2(14.3819, 38.8859)
 rotation = 1.58066
 texture = ExtResource("4_urblq")
 
-[node name="Krzak2" type="Sprite2D" parent="Drzewo3/Krzak"]
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak"]
 position = Vector2(-4.76837e-07, 60.7593)
 texture = ExtResource("4_urblq")
 
-[node name="Krzak" type="Sprite2D" parent="Drzewo3/Krzak/Krzak2"]
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak2"]
 position = Vector2(12.9437, 21.8733)
 rotation = 1.58066
 texture = ExtResource("4_urblq")
 
-[node name="Krzak2" type="Sprite2D" parent="Drzewo3/Krzak/Krzak2"]
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak2"]
 position = Vector2(9.34821, 71.2909)
 texture = ExtResource("4_urblq")
 
-[node name="Krzak" type="Sprite2D" parent="Drzewo3/Krzak/Krzak2/Krzak2"]
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env/Drzewo3/Krzak"]
+position = Vector2(9.34821, -147.442)
+rotation = 3.13612
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3"]
+position = Vector2(-3.33654, 215.478)
+rotation = 1.51912
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak3"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak3"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak3/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak3/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak3/Krzak3/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak4" type="Sprite2D" parent="env/Drzewo3/Krzak"]
+position = Vector2(473.163, -387.239)
+rotation = 1.60421
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4"]
+position = Vector2(9.34821, -147.442)
+rotation = 3.13612
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3"]
+position = Vector2(-3.33654, 215.478)
+rotation = 1.51912
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak3"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak3"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak3/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak3/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak4/Krzak3/Krzak3/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak5" type="Sprite2D" parent="env/Drzewo3/Krzak"]
+position = Vector2(834.148, -207.392)
+rotation = -3.13927
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5"]
+position = Vector2(9.34821, -147.442)
+rotation = 3.13612
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak3"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak3"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak3/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak3/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak3/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak4" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5"]
+position = Vector2(473.163, -387.239)
+rotation = 1.60421
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4"]
+position = Vector2(9.34821, -147.442)
+rotation = 3.13612
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3"]
+position = Vector2(-3.33654, 215.478)
+rotation = 1.51912
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3/Krzak3"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3/Krzak3"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3/Krzak3/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3/Krzak3/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3/Krzak3/Krzak2/Krzak2"]
 position = Vector2(5.03365, 29.1644)
 rotation = 1.58066
 texture = ExtResource("4_urblq")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4ywxr6y32e82"]
+[gd_scene load_steps=3 format=3 uid="uid://c4ywxr6y32e82"]
 
 [ext_resource type="Texture2D" uid="uid://cifch1tv33gau" path="res://sprites/map.png" id="1_si2c5"]
+[ext_resource type="Texture2D" uid="uid://ccarbmvsmttjv" path="res://sprites/wegiel.png" id="2_rsh6k"]
 
 [node name="gameUI" type="Control"]
 layout_mode = 3
@@ -15,7 +16,7 @@ z_index = -1
 texture = ExtResource("1_si2c5")
 centered = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="hp" type="RichTextLabel" parent="."]
 modulate = Color(1, 0, 0, 1)
 z_index = 7
 layout_mode = 0
@@ -29,7 +30,7 @@ tab_size = 7
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+[node name="healthCounter" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 919.0
 offset_top = 464.0
@@ -37,5 +38,35 @@ offset_right = 1016.0
 offset_bottom = 516.0
 theme_override_font_sizes/normal_font_size = 36
 text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wegiel2" type="Sprite2D" parent="."]
+position = Vector2(912.385, 617.84)
+rotation = 1.60139
+scale = Vector2(0.648731, 0.648731)
+texture = ExtResource("2_rsh6k")
+
+[node name="Wegiel3" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(941.385, 610.84)
+rotation = -1.15497
+scale = Vector2(0.754511, 0.754511)
+texture = ExtResource("2_rsh6k")
+
+[node name="Wegiel" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(931.385, 611.84)
+scale = Vector2(0.754511, 0.754511)
+texture = ExtResource("2_rsh6k")
+
+[node name="coalCounter" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 961.0
+offset_top = 587.0
+offset_right = 1033.0
+offset_bottom = 642.0
+theme_override_font_sizes/normal_font_size = 30
+text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1

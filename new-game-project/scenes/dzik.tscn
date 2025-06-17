@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b07412gbe2m3a"]
+[gd_scene load_steps=3 format=3 uid="uid://c44acm2atpooy"]
 
-[ext_resource type="Script" uid="uid://cbqtoex0j4rc5" path="res://scenes/bullet_spawner.gd" id="1_bbrpy"]
+[ext_resource type="Script" path="res://scenes/bullet_spawner.gd" id="1_bbrpy"]
 [ext_resource type="Texture2D" uid="uid://bfskc4semrsos" path="res://sprites/dzik.png" id="2_bbrpy"]
 
 [node name="Node2D" type="Node2D"]
@@ -28,6 +28,7 @@ metadata/_edit_use_anchors_ = true
 [node name="BulletTimer" type="Timer" parent="BulletSpawner"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_bbrpy")
 centered = false
 
