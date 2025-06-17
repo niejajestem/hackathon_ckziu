@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfh1ymikntg7b"]
+[gd_scene load_steps=4 format=3 uid="uid://dfh1ymikntg7b"]
 
+[ext_resource type="Script" uid="uid://7fmyxgm7l1cp" path="res://scenes/game.gd" id="1_3rijl"]
 [ext_resource type="FontFile" uid="uid://ldt3a5xgpo3s" path="res://fonts/Ldfcomicsans-jj7l.ttf" id="2_3rijl"]
 [ext_resource type="Texture2D" uid="uid://ccarbmvsmttjv" path="res://sprites/wegiel.png" id="2_rsh6k"]
 
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3rijl")
 
 [node name="hp" type="RichTextLabel" parent="."]
 modulate = Color(1, 0, 0, 1)
@@ -68,7 +70,7 @@ offset_bottom = 644.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_3rijl")
 theme_override_font_sizes/normal_font_size = 30
-text = "9184"
+text = "0"
 horizontal_alignment = 2
 vertical_alignment = 1
 
@@ -93,4 +95,12 @@ theme_override_colors/default_color = Color(0.920739, 0.79353, 7.70092e-07, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_3rijl")
 theme_override_font_sizes/normal_font_size = 24
-text = "8672"
+text = "1"
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="dzikSpawnTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="dzikSpawnTimer" to="." method="_on_dzik_spawn_timer_timeout"]

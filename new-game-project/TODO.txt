@@ -1,13 +1,12 @@
 Do zrobienia:
 
 W trakcie:
-	- tytuł
-		
 	- menu
 	- UI
-	- przeciwnicy
 	- wieże
 	
 Zrobione:
 	- mapa
 	- pomysł na cel enemy (komin elektrowni)
+	- tytuł
+	- przeciwnicy
