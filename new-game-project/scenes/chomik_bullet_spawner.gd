@@ -14,6 +14,8 @@ var range = 100
 func _ready():
 	$BulletTimer.start()
 	sprite = get_node("../Sprite2D")
+	
+func _process(delta: float) -> void:
 	var size = range / 100
 	$"../Area2D/CollisionShape2D".scale = Vector2(size, size)
 	
