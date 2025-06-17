@@ -15,6 +15,7 @@ func _on_damage_pressed() -> void:
 		$"../../../gameUI/coalCounter".text = "%d" % $"../../../gameUI".coal
 		damagePurchased += 1
 		$"../../DrwalBulletSpawner".damage += 3
+		$"../GridContainer/DamagePrice".text = "%d" % priceTable[damagePurchased]
 
 func _on_range_pressed() -> void:
 	var coal = int($"../../../gameUI".coal)
@@ -24,6 +25,7 @@ func _on_range_pressed() -> void:
 		$"../../../gameUI".coal -= priceTable[rangePurchased]
 		rangePurchased += 1
 		$"../../DrwalBulletSpawner".range *= 1.3
+		$"../GridContainer/RangePrice".text = "%d" % priceTable[rangePurchased]
 
 func _on_speed_pressed() -> void:
 	var coal = int($"../../../gameUI".coal)
@@ -32,3 +34,4 @@ func _on_speed_pressed() -> void:
 		$"../../../gameUI".coal -= priceTable[speedPurchased]
 		speedPurchased += 1
 		$"../../DrwalBulletSpawner".reloadTime /= 1.2
+		$"../GridContainer/SpeedPrice".text = "%d" % priceTable[speedPurchased]
