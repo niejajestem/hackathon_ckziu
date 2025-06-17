@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfh1ymikntg7b"]
+[gd_scene load_steps=3 format=3 uid="uid://c4ywxr6y32e82"]
 
-[ext_resource type="Texture2D" uid="uid://cifch1tv33gau" path="res://sprites/map.png" id="1_si2c5"]
+[ext_resource type="FontFile" uid="uid://ldt3a5xgpo3s" path="res://fonts/Ldfcomicsans-jj7l.ttf" id="2_3rijl"]
 [ext_resource type="Texture2D" uid="uid://ccarbmvsmttjv" path="res://sprites/wegiel.png" id="2_rsh6k"]
 
 [node name="gameUI" type="Control"]
@@ -11,11 +11,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Map" type="Sprite2D" parent="."]
-z_index = -1
-texture = ExtResource("1_si2c5")
-centered = false
-
 [node name="hp" type="RichTextLabel" parent="."]
 modulate = Color(1, 0, 0, 1)
 z_index = 7
@@ -24,6 +19,7 @@ offset_left = 937.0
 offset_top = 435.0
 offset_right = 999.0
 offset_bottom = 480.0
+theme_override_fonts/normal_font = ExtResource("2_3rijl")
 theme_override_font_sizes/normal_font_size = 30
 text = "HP"
 tab_size = 7
@@ -36,6 +32,7 @@ offset_left = 919.0
 offset_top = 464.0
 offset_right = 1016.0
 offset_bottom = 516.0
+theme_override_fonts/normal_font = ExtResource("2_3rijl")
 theme_override_font_sizes/normal_font_size = 36
 text = "100"
 horizontal_alignment = 1
@@ -66,6 +63,7 @@ offset_left = 961.0
 offset_top = 587.0
 offset_right = 1033.0
 offset_bottom = 642.0
+theme_override_fonts/normal_font = ExtResource("2_3rijl")
 theme_override_font_sizes/normal_font_size = 30
 text = "10"
 horizontal_alignment = 1
