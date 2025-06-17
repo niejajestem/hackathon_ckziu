@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bfskc4semrsos" path="res://sprites/dzik.png" id="2_bbrpy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bbrpy"]
-radius = 28.1603
+radius = 30.0
 
 [node name="Node2D" type="PathFollow2D"]
 script = ExtResource("1_oby1b")
@@ -13,6 +13,9 @@ script = ExtResource("1_oby1b")
 texture = ExtResource("2_bbrpy")
 
 [node name="Area2D" type="Area2D" parent="."]
+monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_bbrpy")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
