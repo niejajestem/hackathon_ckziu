@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=2 format=3 uid="uid://c666bw04mpus4"]
-=======
-[gd_scene load_steps=0 format=3 uid="uid://cbcdpbgahlslc"]
->>>>>>> Stashed changes
 
 [ext_resource type="PackedScene" uid="uid://xloejy4xkwdr" path="res://scenes/towerPlace.tscn" id="1_4xfga"]
 

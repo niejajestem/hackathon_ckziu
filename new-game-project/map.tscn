@@ -1,22 +1,15 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=5 format=3 uid="uid://5qvrxjld5ej7"]
 
 [ext_resource type="Texture2D" uid="uid://cifch1tv33gau" path="res://sprites/map.png" id="1_c7s6e"]
 [ext_resource type="PackedScene" uid="uid://xloejy4xkwdr" path="res://scenes/towerPlace.tscn" id="2_wijl4"]
-[ext_resource type="Texture2D" uid="uid://bi70soi47485x" path="res://sprites/drzewo.png" id="3_e0an3"]
+[ext_resource type="Texture2D" uid="uid://uae5gtorasql" path="res://sprites/drzewo.png" id="3_e0an3"]
 [ext_resource type="Texture2D" uid="uid://k0w4x7f6eps6" path="res://sprites/luzny.jpg" id="4_p5pve"]
-=======
-[gd_scene load_steps=2 format=3 uid="uid://cxvt13uue1lgu"]
-
-[ext_resource type="Texture2D" uid="uid://cifch1tv33gau" path="res://sprites/map.png" id="1_c7s6e"]
->>>>>>> Stashed changes
 
 [node name="Map" type="Node2D"]
 
 [node name="Map" type="Sprite2D" parent="."]
 texture = ExtResource("1_c7s6e")
 centered = false
-<<<<<<< Updated upstream
 
 [node name="Node2D" parent="." instance=ExtResource("2_wijl4")]
 position = Vector2(138, 195)
@@ -40,5 +33,3 @@ modulate = Color(1, 1, 1, 0.0392157)
 position = Vector2(103, 609)
 scale = Vector2(0.309524, 0.306667)
 texture = ExtResource("4_p5pve")
-=======
->>>>>>> Stashed changes
