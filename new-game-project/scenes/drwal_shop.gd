@@ -31,4 +31,4 @@ func _on_speed_pressed() -> void:
 		$"../../../gameUI/coalCounter".text = "%d" % $"../../../gameUI".coal
 		$"../../../gameUI".coal -= priceTable[speedPurchased]
 		speedPurchased += 1
-		$"../../DrwalBulletSpawner".realoadTime /= 1.2
+		$"../../DrwalBulletSpawner".reloadTime /= 1.2

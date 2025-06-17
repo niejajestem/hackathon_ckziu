@@ -2,7 +2,7 @@ extends Node
 
 @export var spawn_dzik = preload("res://scenes/dzik.tscn")
 
-var coal = 190
+var coal = 84848484
 var secondsPassed = 0
 var dzikCount = 0
 var wave = 0
