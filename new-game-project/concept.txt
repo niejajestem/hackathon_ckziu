@@ -3,8 +3,14 @@ Wrzenie Miasta
 Tower Defense
 
 Enemy:
- - dziki
- - pkm
+	- dziki
+	- pkm
 
 Shooters:
- - idk
+	- chomiki
+	- 
+
+Map:
+	- grodek
+	- sosina
+	- geosfera
