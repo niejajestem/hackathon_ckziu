@@ -464,5 +464,6 @@ texture = ExtResource("4_p5pve")
 curve = SubResource("Curve2D_2klcf")
 
 [node name="gameUI" parent="." instance=ExtResource("8_jh32y")]
+spawn_dzik = null
 
 [connection signal="child_exiting_tree" from="Path2D" to="gameUI" method="_on_path_2d_child_exiting_tree"]
