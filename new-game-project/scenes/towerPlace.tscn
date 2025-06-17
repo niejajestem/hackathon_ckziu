@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://xloejy4xkwdr"]
+
+[ext_resource type="Script" uid="uid://dmahi6geey3ms" path="res://scenes/tower_place.gd" id="1_0wer5"]
+[ext_resource type="Texture2D" uid="uid://uwi2cq00dvf4" path="res://sprites/plus.png" id="1_vcp7k"]
+[ext_resource type="Texture2D" uid="uid://cp3u1ainyd4fj" path="res://sprites/chomik.png" id="2_8yfso"]
+[ext_resource type="Texture2D" uid="uid://bfskc4semrsos" path="res://sprites/dzik.png" id="4_mtb8i"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0wer5")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("1_vcp7k")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+visible = false
+offset_top = 72.0
+offset_right = 64.0
+offset_bottom = 204.0
+columns = 2
+
+[node name="Chomik" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_8yfso")
+
+[node name="Dzik" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_mtb8i")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="Button" to="." method="_on_button_toggled"]
+[connection signal="pressed" from="GridContainer/Chomik" to="." method="_on_chomik_pressed"]
+[connection signal="pressed" from="GridContainer/Dzik" to="." method="_on_dzik_pressed"]
