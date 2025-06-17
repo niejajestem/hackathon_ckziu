@@ -38,13 +38,12 @@ grow_vertical = 2
 columns = 2
 
 [node name="Chomik" type="TextureButton" parent="ColorRect/GridContainer"]
-modulate = Color(0.8, 0.8, 0.8, 1)
+modulate = Color(0.533333, 0.533333, 0.533333, 1)
 layout_mode = 2
 texture_normal = ExtResource("2_8yfso")
 script = ExtResource("4_b38eh")
 
 [node name="Drwal" type="TextureButton" parent="ColorRect/GridContainer"]
-modulate = Color(0.8, 0.8, 0.8, 1)
 layout_mode = 2
 texture_normal = ExtResource("4_mtb8i")
 script = ExtResource("6_7v4r1")
