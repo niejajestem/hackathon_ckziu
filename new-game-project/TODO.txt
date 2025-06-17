@@ -1,0 +1,6 @@
+- wieże
+- mapa
+- cel enemy
+- przeciwnicy
+- menu
+- UI
