@@ -2,31 +2,33 @@ extends Node
 
 @export var spawn_dzik = preload("res://scenes/dzik.tscn")
 
-
-var coal = 0
+var coal = 90
 var secondsPassed = 0
 var dzikCount = 0
-var wave = 1
+var wave = 0
 
 func _on_timer_timeout() -> void:
 	secondsPassed += 1
-	coal += 1
-	$coalCounter.text = "%d" % coal
 
 func finishWave():
 	wave += 1
 	dzikCount = 3*wave
 	coal += 10*wave
-	print("Wave %d" % wave)
+	$coalCounter.text = "%d" % coal
 	$falaCounter.text = "%d" % wave
+	print("Wave %d" % wave)
 	if wave % 5 == 0:
-		$dzikSpawnTimer.start(0.2)
+		$dzikSpawnTimer.start(0.5)
 	else:
 		$dzikSpawnTimer.start(1)
+		
+func _ready() -> void:
+	finishWave() # On first start
 
 func _on_path_2d_child_exiting_tree(node: Node) -> void:
 	print("Killed a dzik")
 	coal += 5
+	$coalCounter.text = "%d" % coal
 	
 	print($"../Path2D".get_child_count())
 	if $"../Path2D".get_child_count() == 1: # 1, bo count sie zmniejsza dopiero po wywolaniu tej funkcji
