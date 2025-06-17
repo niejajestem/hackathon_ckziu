@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ukk1pokqyhjp"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://cp3u1ainyd4fj" path="res://sprites/chomik.png" id="2_0e48y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_epypp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0e48y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_wtcfe")
+
+[node name="chomik" type="CharacterBody2D" parent="."]
+
+[node name="chomik_sprite" type="AnimatedSprite2D" parent="chomik"]
+sprite_frames = SubResource("SpriteFrames_epypp")
+frame_progress = 0.303663
+
+[node name="chomik_collsion" type="CollisionShape2D" parent="chomik"]

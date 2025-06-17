@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cl6d3mp2du0xx"]
 
-[ext_resource type="Script" uid="uid://cbqtoex0j4rc5" path="res://scenes/bullet_spawn.gd" id="1_ay4al"]
+[ext_resource type="Script" path="res://scenes/bullet_spawn.gd" id="1_ay4al"]
 [ext_resource type="Texture2D" uid="uid://cp3u1ainyd4fj" path="res://sprites/chomik.png" id="2_ay4al"]
 
 [node name="Node2D" type="Node2D"]
