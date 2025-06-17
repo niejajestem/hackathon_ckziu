@@ -11,6 +11,7 @@ func _on_chomik_pressed():
 	var coal = int($"../gameUI".coal)
 	if coal >= 100:
 		$"../gameUI".coal -= 100
+		$"../gameUI/coalCounter".text = "%d" % $"../gameUI".coal
 		$ColorRect.visible = false
 		spawnTower(spawn_chomik)
 
@@ -18,6 +19,7 @@ func _on_dzik_pressed():
 	var coal = int($"../gameUI".coal)
 	if coal >= 300:
 		$"../gameUI".coal -= 300
+		$"../gameUI/coalCounter".text = "%d" % $"../gameUI".coal
 		$ColorRect.visible = false
 		spawnTower(spawn_dzik)
 

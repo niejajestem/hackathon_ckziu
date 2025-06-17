@@ -4,6 +4,7 @@ extends Node2D
 
 var damage = 30
 var reloadTime = 2
+var range = 200
 
 func _ready():
 	$BulletTimer.start()
