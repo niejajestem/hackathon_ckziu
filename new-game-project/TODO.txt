@@ -1,6 +1,12 @@
-- wieże
-- mapa
-- cel enemy
-- przeciwnicy
-- menu
-- UI
+Do zrobienia:
+	- tytuł
+	- mapa
+	- przeciwnicy
+	- menu
+	- UI
+
+W trakcie:
+	- wieże
+
+Zrobione:
+	- pomysł na cel enemy (komin elektrowni)
