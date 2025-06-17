@@ -7,6 +7,8 @@
 radius = 30.0
 
 [node name="Node2D" type="PathFollow2D"]
+rotates = false
+loop = false
 script = ExtResource("1_oby1b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

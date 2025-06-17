@@ -8,12 +8,18 @@ func _on_button_pressed():
 	$Button.visible = false
 
 func _on_chomik_pressed():
-	$ColorRect.visible = false
-	spawnTower(spawn_chomik)
+	var coal = int($"../gameUI".coal)
+	if coal >= 100:
+		$"../gameUI".coal -= 100
+		$ColorRect.visible = false
+		spawnTower(spawn_chomik)
 
 func _on_dzik_pressed():
-	$ColorRect.visible = false
-	spawnTower(spawn_dzik)
+	var coal = int($"../gameUI".coal)
+	if coal >= 300:
+		$"../gameUI".coal -= 300
+		$ColorRect.visible = false
+		spawnTower(spawn_dzik)
 
 func spawnTower(spawn):
 	var position = $".".position
