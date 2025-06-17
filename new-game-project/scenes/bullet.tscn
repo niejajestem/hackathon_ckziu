@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cm5qf5uvufoix"]
+[gd_scene load_steps=5 format=3 uid="uid://cm5qf5uvufoix"]
 
 [ext_resource type="Texture2D" uid="uid://dlk25c88khoy0" path="res://sprites/bullet.png" id="1_mkf8s"]
-[ext_resource type="Script" uid="uid://bwu236t451jv6" path="res://scenes/bullet.gd" id="1_y25gk"]
+[ext_resource type="Script" path="res://scenes/bullet.gd" id="1_y25gk"]
+[ext_resource type="Texture2D" uid="uid://7roo8rwmox44" path="res://sprites/siekiera.png" id="3_l5glv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mkf8s"]
 radius = 3.0
@@ -10,6 +11,7 @@ radius = 3.0
 script = ExtResource("1_y25gk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(2.27374e-13, 5.36442e-07)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_mkf8s")
@@ -19,5 +21,9 @@ monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("CircleShape2D_mkf8s")
+
+[node name="Siekiera" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("3_l5glv")
 
 [connection signal="area_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_area_entered"]
