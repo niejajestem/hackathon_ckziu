@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://negigewd7e8n"]
 
-[ext_resource type="Script" uid="uid://cv3ewfto8woe" path="res://scenes/detectEnemies.gd" id="1_aor04"]
+[ext_resource type="Script" path="res://scenes/detectEnemies.gd" id="1_aor04"]
 [ext_resource type="Script" uid="uid://ckdt573aatt4q" path="res://scenes/drwal_bullet_spawner.gd" id="2_4m5f3"]
 [ext_resource type="Script" uid="uid://c4i76wwt4ugaj" path="res://scenes/shopbutton.gd" id="2_bs1bs"]
 [ext_resource type="Texture2D" uid="uid://b4ft76y4u2lch" path="res://sprites/drwal.png" id="3_qu14i"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://c5aho3us2h88x" path="res://scenes.gd" id="7_6lou1"]
 [ext_resource type="Texture2D" uid="uid://lvju5ijq2vka" path="res://sprites/krzak.png" id="8_suvg1"]
 [ext_resource type="Script" uid="uid://ulum26qfvo30" path="res://scenes/button.gd" id="9_08amw"]
+[ext_resource type="Texture2D" uid="uid://d144oxog2br8a" path="res://sprites/drwalLoaded.png" id="4_3bkuk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mr8ar"]
 radius = 150.0
@@ -27,9 +28,12 @@ script = ExtResource("2_bs1bs")
 z_index = 1
 position = Vector2(27, 30.25)
 script = ExtResource("2_4m5f3")
+shoot_texture = ExtResource("3_qu14i")
+default_texture = ExtResource("4_3bkuk")
 metadata/damageasd = 30
 
 [node name="ColorRect" type="ColorRect" parent="DrwalBulletSpawner"]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

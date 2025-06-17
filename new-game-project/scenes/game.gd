@@ -50,11 +50,9 @@ func _on_dzik_spawn_timer_timeout() -> void:
 		$"../Path2D".add_child(dzik)
 		spawnedDziks += 1
 		#print("Spawned a dzik")
-		print(spawnedDziks, dzikCount)
 	else:
 		spawnedAllDziks = true
 		$dzikSpawnTimer.stop()
-		print(spawnedDziks, dzikCount)
 
 func _on_path_2d_child_exiting_tree(node: Node) -> void:
 	#print("Killed a dzik")

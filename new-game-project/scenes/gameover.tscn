@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://c0hxkdc04l3xx"]
+[gd_scene load_steps=2 format=3 uid="uid://dvr4mxpjdgo66"]
+
+[ext_resource type="PackedScene" uid="uid://dke3aqem8vyij" path="res://scenes/gameoverUI.tscn" id="1_ncp31"]
 
 [node name="Gameover" type="Node2D"]
+
+[node name="GameoverUi" parent="." instance=ExtResource("1_ncp31")]
