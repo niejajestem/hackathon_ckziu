@@ -41,7 +41,7 @@ position = Vector2(293, 432)
 position = Vector2(651, 214)
 
 [node name="towerPlace9" parent="." instance=ExtResource("2_wijl4")]
-position = Vector2(284, 125)
+position = Vector2(295, 99)
 
 [node name="towerPlace10" parent="." instance=ExtResource("2_wijl4")]
 position = Vector2(379, 214)
@@ -68,6 +68,22 @@ position = Vector2(1004, 43)
 
 [node name="Drzewo" type="Sprite2D" parent="env"]
 position = Vector2(1063, 242)
+texture = ExtResource("3_e0an3")
+
+[node name="Drzewo4" type="Sprite2D" parent="env"]
+position = Vector2(759, 365)
+texture = ExtResource("3_e0an3")
+
+[node name="Drzewo7" type="Sprite2D" parent="env"]
+position = Vector2(759, 365)
+texture = ExtResource("3_e0an3")
+
+[node name="Drzewo5" type="Sprite2D" parent="env"]
+position = Vector2(788, 359)
+texture = ExtResource("3_e0an3")
+
+[node name="Drzewo6" type="Sprite2D" parent="env"]
+position = Vector2(811, 368)
 texture = ExtResource("3_e0an3")
 
 [node name="Drzewo2" type="Sprite2D" parent="env"]
@@ -386,6 +402,58 @@ texture = ExtResource("4_urblq")
 [node name="Krzak" type="Sprite2D" parent="env/Drzewo3/Krzak/Krzak5/Krzak4/Krzak3/Krzak3/Krzak2/Krzak2"]
 position = Vector2(5.03365, 29.1644)
 rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="env"]
+position = Vector2(835, 298)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="env"]
+position = Vector2(866, 286)
+rotation = 1.84037
+texture = ExtResource("4_urblq")
+
+[node name="Krzak6" type="Sprite2D" parent="env"]
+position = Vector2(866, 286)
+rotation = 1.65765
+texture = ExtResource("4_urblq")
+
+[node name="Krzak3" type="Sprite2D" parent="env"]
+position = Vector2(815, 262)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak4" type="Sprite2D" parent="env"]
+position = Vector2(844, 246)
+rotation = 1.72051
+texture = ExtResource("4_urblq")
+
+[node name="Krzak5" type="Sprite2D" parent="env"]
+position = Vector2(310.241, 245.059)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak10" type="Sprite2D" parent="env"]
+position = Vector2(321.241, 205.059)
+rotation = 1.57263
+texture = ExtResource("4_urblq")
+
+[node name="Krzak11" type="Sprite2D" parent="env"]
+position = Vector2(324, 44)
+rotation = 4.43693
+texture = ExtResource("4_urblq")
+
+[node name="Krzak7" type="Sprite2D" parent="env"]
+position = Vector2(318.241, 278.059)
+rotation = 1.77407
+texture = ExtResource("4_urblq")
+
+[node name="Krzak8" type="Sprite2D" parent="env"]
+position = Vector2(315.241, 323.059)
+rotation = 0.760876
+texture = ExtResource("4_urblq")
+
+[node name="Krzak9" type="Sprite2D" parent="env"]
+position = Vector2(317.241, 372.059)
+rotation = 4.65262
 texture = ExtResource("4_urblq")
 
 [node name="Luzny" type="Sprite2D" parent="."]

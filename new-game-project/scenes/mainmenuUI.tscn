@@ -13,14 +13,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ppgl6")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="title" type="RichTextLabel" parent="."]
 z_index = 1
 layout_mode = 0
 offset_right = 1151.0
 offset_bottom = 345.0
 theme_override_fonts/normal_font = ExtResource("1_wamd2")
 theme_override_font_sizes/normal_font_size = 100
-text = "PLACEHOLDER"
+text = "dzikusy"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -38,7 +38,7 @@ text = "Fot. Shutterstock / Jacek Piotrowski"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="."]
+[node name="startButton" type="Button" parent="."]
 z_index = 1
 layout_mode = 0
 offset_left = 444.0
@@ -53,4 +53,4 @@ modulate = Color(0.114897, 0.114897, 0.114897, 1)
 texture = ExtResource("2_tli8v")
 centered = false
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="startButton" to="." method="_on_button_pressed"]

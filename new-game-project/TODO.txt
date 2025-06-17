@@ -1,8 +1,9 @@
 Do zrobienia:
-	- tytuł
-	- menu
 
 W trakcie:
+	- tytuł
+		
+	- menu
 	- UI
 	- przeciwnicy
 	- wieże
