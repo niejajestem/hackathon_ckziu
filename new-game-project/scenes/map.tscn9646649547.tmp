@@ -16,7 +16,7 @@ _data = {
 point_count = 14
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nakos"]
-size = Vector2(54, 91)
+size = Vector2(54, 20)
 
 [node name="Map" type="Node2D"]
 script = ExtResource("1_nakos")
@@ -472,12 +472,11 @@ metadata/_edit_use_anchors_ = true
 
 [node name="pathEnd" type="Area2D" parent="."]
 position = Vector2(965, 325)
-monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pathEnd"]
-position = Vector2(1, 18.5)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_nakos")
 script = ExtResource("8_be0no")
 
 [connection signal="child_exiting_tree" from="Path2D" to="gameUI" method="_on_path_2d_child_exiting_tree"]
-[connection signal="area_entered" from="pathEnd" to="pathEnd/CollisionShape2D" method="_on_path_end_area_entered"]
+[connection signal="body_entered" from="pathEnd" to="pathEnd/CollisionShape2D" method="_on_path_end_body_entered"]

@@ -1,6 +1,6 @@
 extends PathFollow2D
 
-var speed = 0.03
+var speed = 0.53
 var health = 1
 
 func _process(delta: float) -> void:
