@@ -18,9 +18,12 @@ func finishWave():
 	$falaCounter.text = "%d" % wave
 	print("Wave %d" % wave)
 	if wave % 5 == 0:
+		# faster wave
 		$dzikSpawnTimer.start(0.5)
+		$falaCounter.add_theme_color_override("default_color", "ff2222")
 	else:
 		$dzikSpawnTimer.start(1)
+		$falaCounter.add_theme_color_override("default_color", "ebca00")
 		
 func _ready() -> void:
 	finishWave() # On first start
