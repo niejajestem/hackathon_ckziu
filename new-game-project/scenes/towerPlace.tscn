@@ -12,15 +12,15 @@ scale = Vector2(0.7, 0.7)
 script = ExtResource("1_0wer5")
 
 [node name="Button" type="Button" parent="."]
+visible = false
 offset_right = 8.0
 offset_bottom = 8.0
 icon = ExtResource("1_vcp7k")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-offset_right = 161.0
-offset_bottom = 94.0
-color = Color(0, 0, 0, 0.6)
+offset_right = 173.0
+offset_bottom = 97.0
+color = Color(0, 0, 0, 0.8)
 
 [node name="GridContainer" type="GridContainer" parent="ColorRect"]
 layout_mode = 1
@@ -30,9 +30,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -66.0
-offset_top = -32.0
+offset_top = -45.5
 offset_right = 66.0
-offset_bottom = 32.0
+offset_bottom = 45.5
 grow_horizontal = 2
 grow_vertical = 2
 columns = 2
@@ -48,6 +48,29 @@ modulate = Color(0.8, 0.8, 0.8, 1)
 layout_mode = 2
 texture_normal = ExtResource("4_mtb8i")
 script = ExtResource("6_7v4r1")
+
+[node name="ChomikCena" type="RichTextLabel" parent="ColorRect/GridContainer"]
+layout_mode = 2
+text = "100"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="DrwalCena" type="RichTextLabel" parent="ColorRect/GridContainer"]
+layout_mode = 2
+text = "300"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ColorRect"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -25.0
+offset_bottom = 25.0
+grow_horizontal = 0
+text = "X"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="toggled" from="Button" to="." method="_on_button_toggled"]

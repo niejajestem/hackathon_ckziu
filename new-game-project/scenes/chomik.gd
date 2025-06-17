@@ -1,8 +1,8 @@
 extends TextureButton
 
 func _on_mouse_entered() -> void:
-	scale.x = 1.2
-	scale.y = 1.2
+	scale.x = 1.1
+	scale.y = 1.1
 	modulate = "#ffffff"
 
 func _on_mouse_exited() -> void:
