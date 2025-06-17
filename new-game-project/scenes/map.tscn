@@ -398,7 +398,19 @@ texture = ExtResource("4_p5pve")
 curve = SubResource("Curve2D_2klcf")
 
 [node name="Node2D" parent="Path2D" instance=ExtResource("6_2lpho")]
+position = Vector2(102, 566.456)
+progress = 116.545
+rotates = false
+loop = false
+
+[node name="Node2D2" parent="Path2D" instance=ExtResource("6_2lpho")]
 position = Vector2(102, 683)
+rotates = false
+loop = false
+
+[node name="Node2D3" parent="Path2D" instance=ExtResource("6_2lpho")]
+position = Vector2(102, 425.867)
+progress = 257.133
 rotates = false
 loop = false
 
