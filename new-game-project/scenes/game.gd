@@ -2,7 +2,7 @@ extends Node
 
 @export var spawn_dzik = preload("res://scenes/dzik.tscn")
 
-var coal = 900
+var coal = 190
 var secondsPassed = 0
 var dzikCount = 0
 var wave = 0
@@ -10,6 +10,8 @@ var spawnedDziks = 0
 var hp = 100
 var spawnedAllDziks = 0
 
+func _process(delta: float) -> void:
+	$coalCounter.text = "%d" % coal
 
 func _on_timer_timeout() -> void:
 	secondsPassed += 1
