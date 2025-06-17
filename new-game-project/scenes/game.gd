@@ -8,6 +8,8 @@ var dzikCount = 0
 var wave = 0
 var spawnedDziks = 0
 var hp = 100
+var spawnedAllDziks = 0
+
 
 func _on_timer_timeout() -> void:
 	secondsPassed += 1
@@ -23,13 +25,18 @@ func finishWave():
 	wave += 1
 	dzikCount = 3*wave
 	spawnedDziks = 0
+	spawnedAllDziks = false
 	coal += 10*wave
 	$coalCounter.text = "%d" % coal
 	$falaCounter.text = "%d" % wave
 	print("Wave %d" % wave)
-	if wave % 5 == 0:
+	print(wave % 15 != 0)
+	if wave % 5 == 0 and wave % 15 != 0:
 		# faster wave
 		$dzikSpawnTimer.start(0.5)
+		$falaCounter.add_theme_color_override("default_color", "ff2222")
+	elif wave % 15 == 0:
+		$dzikSpawnTimer.start(0.3)
 		$falaCounter.add_theme_color_override("default_color", "ff2222")
 	else:
 		$dzikSpawnTimer.start(1)
@@ -46,7 +53,7 @@ func _on_dzik_spawn_timer_timeout() -> void:
 		#print("Spawned a dzik")
 		print(spawnedDziks, dzikCount)
 	else:
-		spawnedDziks = 0
+		spawnedAllDziks = true
 		$dzikSpawnTimer.stop()
 		print(spawnedDziks, dzikCount)
 
@@ -57,6 +64,12 @@ func _on_path_2d_child_exiting_tree(node: Node) -> void:
 	
 	if $"../Path2D".get_child_count() == 1: # 1, bo count sie zmniejsza dopiero po wywolaniu tej funkcji
 		
-		if(spawnedDziks == dzikCount):
+		if(spawnedAllDziks):
 			print("Killed all dziks")
 			finishWave()
+			
+func _process(delta):
+	$"../Path2D".progress += speed * delta
+	if $"../Path2D".progress_ratio >= 1.0:
+		print("Completed path!")
+		queue_free()  # Remove the object, if needed
