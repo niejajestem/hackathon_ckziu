@@ -37,12 +37,35 @@ scale = Vector2(1.39064, 1.23438)
 texture = ExtResource("3_e0an3")
 
 [node name="Drzewo3" type="Sprite2D" parent="Drzewo3"]
-position = Vector2(-143.819, -159.595)
+position = Vector2(-147.414, -166.885)
 scale = Vector2(0.813947, 0.807062)
 texture = ExtResource("3_e0an3")
 
 [node name="Krzak" type="Sprite2D" parent="Drzewo3"]
-position = Vector2(-19.4156, -93.9747)
+position = Vector2(-158.92, -106.126)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="Drzewo3/Krzak"]
+position = Vector2(14.3819, 38.8859)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="Drzewo3/Krzak"]
+position = Vector2(-4.76837e-07, 60.7593)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="Drzewo3/Krzak/Krzak2"]
+position = Vector2(12.9437, 21.8733)
+rotation = 1.58066
+texture = ExtResource("4_urblq")
+
+[node name="Krzak2" type="Sprite2D" parent="Drzewo3/Krzak/Krzak2"]
+position = Vector2(9.34821, 71.2909)
+texture = ExtResource("4_urblq")
+
+[node name="Krzak" type="Sprite2D" parent="Drzewo3/Krzak/Krzak2/Krzak2"]
+position = Vector2(5.03365, 29.1644)
+rotation = 1.58066
 texture = ExtResource("4_urblq")
 
 [node name="Luzny" type="Sprite2D" parent="."]
