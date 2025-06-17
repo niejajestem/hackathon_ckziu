@@ -93,7 +93,6 @@ texture = ExtResource("3_e0an3")
 [node name="Drzewo3" type="Sprite2D" parent="env"]
 position = Vector2(205, 573)
 scale = Vector2(1.39064, 1.23438)
-texture = ExtResource("3_e0an3")
 
 [node name="Drzewo3" type="Sprite2D" parent="env/Drzewo3"]
 position = Vector2(-147.414, -166.885)
