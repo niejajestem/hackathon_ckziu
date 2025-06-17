@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://y1x6nm00707p"]
+
+[ext_resource type="Texture2D" uid="uid://cifch1tv33gau" path="res://sprites/map.png" id="1_c7s6e"]
+[ext_resource type="PackedScene" uid="uid://xloejy4xkwdr" path="res://scenes/towerPlace.tscn" id="2_wijl4"]
+[ext_resource type="Texture2D" uid="uid://uae5gtorasql" path="res://sprites/drzewo.png" id="3_e0an3"]
+[ext_resource type="Texture2D" uid="uid://k0w4x7f6eps6" path="res://sprites/luzny.jpg" id="4_p5pve"]
+
+[node name="Map" type="Node2D"]
+
+[node name="Map" type="Sprite2D" parent="."]
+texture = ExtResource("1_c7s6e")
+centered = false
+
+[node name="Node2D" parent="." instance=ExtResource("2_wijl4")]
+position = Vector2(138, 195)
+
+[node name="Drzewo" type="Sprite2D" parent="."]
+position = Vector2(1063, 242)
+texture = ExtResource("3_e0an3")
+
+[node name="Drzewo2" type="Sprite2D" parent="."]
+position = Vector2(1099.75, 274.5)
+scale = Vector2(1.16406, 1.29688)
+texture = ExtResource("3_e0an3")
+
+[node name="Drzewo3" type="Sprite2D" parent="."]
+position = Vector2(606, 607)
+scale = Vector2(13.5938, 1)
+texture = ExtResource("3_e0an3")
+
+[node name="Luzny" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.0392157)
+position = Vector2(103, 609)
+scale = Vector2(0.309524, 0.306667)
+texture = ExtResource("4_p5pve")
