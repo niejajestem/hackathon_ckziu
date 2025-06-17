@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://b258uwjcqde84"]
+
+[ext_resource type="Script" uid="uid://jxpx2wkbyrak" path="res://scenes/mainmenu.gd" id="1_ppgl6"]
+[ext_resource type="FontFile" uid="uid://ldt3a5xgpo3s" path="res://fonts/Ldfcomicsans-jj7l.ttf" id="1_wamd2"]
+[ext_resource type="Texture2D" uid="uid://ck3swwi54vrsw" path="res://sprites/bg.webp" id="2_tli8v"]
+
+[node name="MainmenuUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ppgl6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 1
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 345.0
+theme_override_fonts/normal_font = ExtResource("1_wamd2")
+theme_override_font_sizes/normal_font_size = 100
+text = "PLACEHOLDER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bgcopyright" type="RichTextLabel" parent="."]
+z_index = 1
+layout_mode = 0
+offset_left = -8.0
+offset_top = 624.0
+offset_right = 179.0
+offset_bottom = 653.0
+theme_override_colors/default_color = Color(0.18359, 0.18359, 0.18359, 1)
+theme_override_fonts/normal_font = ExtResource("1_wamd2")
+theme_override_font_sizes/normal_font_size = 10
+text = "Fot. Shutterstock / Jacek Piotrowski"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+z_index = 1
+layout_mode = 0
+offset_left = 444.0
+offset_top = 353.0
+offset_right = 706.0
+offset_bottom = 409.0
+theme_override_font_sizes/font_size = 24
+text = "START"
+
+[node name="Bg" type="Sprite2D" parent="."]
+modulate = Color(0.114897, 0.114897, 0.114897, 1)
+texture = ExtResource("2_tli8v")
+centered = false
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
