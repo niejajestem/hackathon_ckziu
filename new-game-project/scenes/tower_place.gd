@@ -1,6 +1,8 @@
 extends Node2D
 
-@export var spawn_tower = preload("res://scenes/tower.tscn") 
+@export var spawn_chomik = preload("res://scenes/chomik.tscn")
+@export var spawn_dzik = preload("res://scenes/dzik.tscn")
+
 
 func _on_button_pressed():
 	$GridContainer.visible = true
@@ -8,15 +10,15 @@ func _on_button_pressed():
 
 func _on_chomik_pressed():
 	$GridContainer.visible = false
-	spawnTower()
+	spawnTower(spawn_chomik)
 
 func _on_dzik_pressed():
 	$GridContainer.visible = false
-	spawnTower()
+	spawnTower(spawn_dzik)
 
-func spawnTower():
+func spawnTower(spawn):
 	var position = $".".position
-	var obj = spawn_tower.instantiate()
+	var obj = spawn.instantiate()
 	obj.position = position
 	
 	$"..".add_child(obj)

@@ -1,10 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbcdpbgahlslc"]
-
-[ext_resource type="PackedScene" uid="uid://xloejy4xkwdr" path="res://scenes/towerPlace.tscn" id="1_4xfga"]
+[gd_scene format=3 uid="uid://cbcdpbgahlslc"]
 
 [node name="Map" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-
-[node name="towerPlace1" parent="." instance=ExtResource("1_4xfga")]
-position = Vector2(159, 131)
