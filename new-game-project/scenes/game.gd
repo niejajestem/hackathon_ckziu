@@ -18,9 +18,11 @@ func finishWave():
 	dzikCount = 3*wave
 	coal += 10*wave
 	print("Wave %d" % wave)
-	
-	_on_dzik_spawn_timer_timeout()
-
+	$falaCounter.text = "%d" % wave
+	if wave % 5 == 0:
+		$dzikSpawnTimer.start(0.2)
+	else:
+		$dzikSpawnTimer.start(1)
 
 func _on_path_2d_child_exiting_tree(node: Node) -> void:
 	print("Killed a dzik")
@@ -32,10 +34,13 @@ func _on_path_2d_child_exiting_tree(node: Node) -> void:
 		finishWave()
 		
 
-
+var spawnedDziks = 0
 func _on_dzik_spawn_timer_timeout() -> void:
-	if $"../Path2D".get_child_count() != dzikCount:
+	if spawnedDziks < dzikCount:
 		var dzik = spawn_dzik.instantiate()
 		$"../Path2D".add_child(dzik)
+		spawnedDziks += 1
 		print("Spawned a dzik")
-		print($"../Path2D".get_children())
+	else:
+		spawnedDziks = 0
+		$dzikSpawnTimer.stop()
