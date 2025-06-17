@@ -6,7 +6,7 @@ Do zrobienia:
 	- UI
 
 W trakcie:
-	- wieże
 
+	- wieże
 Zrobione:
 	- pomysł na cel enemy (komin elektrowni)
