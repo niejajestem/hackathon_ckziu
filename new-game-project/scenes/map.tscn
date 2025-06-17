@@ -1,10 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://y1x6nm00707p"]
+[gd_scene load_steps=8 format=3 uid="uid://kg2stjr66a2v"]
 
 [ext_resource type="Texture2D" uid="uid://cifch1tv33gau" path="res://sprites/map.png" id="1_c7s6e"]
 [ext_resource type="PackedScene" uid="uid://xloejy4xkwdr" path="res://scenes/towerPlace.tscn" id="2_wijl4"]
 [ext_resource type="Texture2D" uid="uid://uae5gtorasql" path="res://sprites/drzewo.png" id="3_e0an3"]
 [ext_resource type="Texture2D" uid="uid://k0w4x7f6eps6" path="res://sprites/luzny.jpg" id="4_p5pve"]
 [ext_resource type="Texture2D" uid="uid://lvju5ijq2vka" path="res://sprites/krzak.png" id="4_urblq"]
+[ext_resource type="PackedScene" uid="uid://b07412gbe2m3a" path="res://scenes/dzik.tscn" id="6_2lpho"]
+
+[sub_resource type="Curve2D" id="Curve2D_2klcf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 102, 683, 0, 0, 0, 0, 102, 62, 0, 0, 0, 0, 243, 62, 0, 0, 0, 0, 244, 538, 0, 0, 0, 0, 745, 538, 0, 0, 0, 0, 745, 424, 0, 0, 0, 0, 395, 424, 0, 0, 0, 0, 395, 305, 0, 0, 0, 0, 741, 305, 0, 0, 0, 0, 740, 178, 0, 0, 0, 0, 398, 178, 0, 0, 0, 0, 398, 66, 0, 0, 0, 0, 966, 67, 0, 0, 0, 0, 966, 325)
+}
+point_count = 14
 
 [node name="Map" type="Node2D"]
 
@@ -43,3 +50,12 @@ modulate = Color(1, 1, 1, 0.0392157)
 position = Vector2(103, 609)
 scale = Vector2(0.309524, 0.306667)
 texture = ExtResource("4_p5pve")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_2klcf")
+
+[node name="Node2D" parent="Path2D" instance=ExtResource("6_2lpho")]
+position = Vector2(102, 683)
+rotation = -1.5708
+rotates = false
+loop = false
